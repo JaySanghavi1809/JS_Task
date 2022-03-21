@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Sum of numeric array</title>
+
+    </head>
+
+    <body>
+        <h3>Sum of numeric array</h3>
+
+        <p id="i"></p>
+        <p id="i1"></p>
+
+        <script>
+            const num = [10,20,30,40,50,60,70,80,90,100]
+            document.getElementById('i').innerHTML = num;
+
+            let sum = num.reduce(mySum);
+            document.getElementById('i1').innerHTML = 'Sum is: ' +  sum;
+
+            function mySum(total,value)
+            {
+                return  total + value ;
+            }
+        </script>
+    </body>
+</html>

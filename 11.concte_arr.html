@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Concatenating string array value</title>
+    </head>
+
+    <body>
+        <h3>Concatenating string array value</h3>
+
+        <p id="i"></p>
+        <p id="i2"></p>
+        <p id="i3"></p>
+
+        <script>
+            const state = ['J&K', 'Ladakh', 'Punjab', 'Haryana', 'Uttrakhand'];
+            document.getElementById('i').innerHTML = state;
+
+            const country = ['India', 'USA', 'Russia', 'UK', 'Japan' ];
+            document.getElementById('i2').innerHTML = country;
+
+
+            const merge = state.concat(country);
+            document.getElementById('i3').innerHTML = merge;
+            
+
+        </script>
+    </body>
+</html>

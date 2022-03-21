@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Declared string array and sort in ascending order and descending order</title>
+    </head>
+
+    <body>
+        <h3>Declared string array and sort in ascending order and descending order</h3>
+
+        <p id="i1"></p>
+        <button onclick="sortAscending()">Sort in Ascending Order</button>
+        <p id="i2"></p>
+
+        <button onclick="sortDscending()">Sort in Descending Order</button>
+        <p id="i3"></p>
+
+        <script>
+            const capital = ['Delhi', 'Gandhinagar', 'Lucknow', 'Jaipur', 'Mumbai', 'Banglore','Amritsar'];
+            document.getElementById('i1').innerHTML =  capital;
+
+            function sortAscending()
+             {
+                capital.sort();
+                document.getElementById('i2').innerHTML = capital;
+             }
+
+             function sortDscending()
+             {
+                 capital.reverse();
+                 document.getElementById('i3').innerHTML = capital;
+             }
+        </script>
+    </body>
+</html>

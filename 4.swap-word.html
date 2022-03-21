@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>swap given word with specified word from string replace word </title>
+    </head>
+
+    <body>
+        <h3>Swap given word with specified word from string replace word </h3>
+        <p id="i1"></p>
+       
+        
+
+        <button onclick="swap()">Click to Swap</button>
+
+        <p id="demo"></p>
+        <script>
+            let str = 'Hello World';
+            document.getElementById('i1').innerHTML = 'String is: ' + str;
+
+            function swap()
+            {
+                let str2 = str.replace('World', 'India');
+                document.getElementById('demo').innerHTML =  str2;
+            }
+        </script>
+    </body>
+</html>

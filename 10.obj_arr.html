@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Define object array and search value from it and find particular index </title>
+    </head>
+
+    <body>
+        <h3>Define object array and search value from it and find particular index</h3>
+
+        <p id="demo"></p>
+        <p id="i1"></p>
+        <p id="i2"></p>
+
+        <script>
+            const capitals = [
+                {state: 'Gujarat', capital: 'Gandhinagar'},
+                {state: 'Maharashtra', capital: 'Mumbai'},
+                {state: 'UP', capital: 'Lucknow'},
+                {state: 'Bihar', capital: 'Patna'},
+            ];
+
+            console.log(capitals);
+
+            document.getElementById('demo').innerHTML = 
+            capitals[0].state + " , "  + capitals[0].capital + "<br>" + 
+            capitals[1].state + " , "  + capitals[1].capital + "<br>" + 
+            capitals[2].state + " , "  + capitals[2].capital + "<br>" + 
+            capitals[3].state + " , "  + capitals[3].capital + "<br>" ;
+
+
+            const index = capitals.findIndex(cap => cap.capital == 'Lucknow' );
+            document.getElementById('i1').innerHTML = 'Index of  Lucknow: ' + index;
+
+            
+            
+        </script>
+    </body>
+</html>

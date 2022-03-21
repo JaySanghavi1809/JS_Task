@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Convert json array to string and string to  json array</title>
+    </head>
+
+    <body>
+        <h3>Convert json array to string and string to  json array</h3>
+
+
+        <h4>Convert JSON array to string</h4>
+        <p id="i1"></p>
+        <p id="i2"></p>
+
+        <script>
+            const capital = ["Delhi", "Gandhinagar", "Lucknow", "Jaipur", "Mumbai", "Banglore"];
+            document.getElementById('i1').innerHTML =  capital;
+
+            const mycap = JSON.stringify(capital);
+            document.getElementById('i2').innerHTML =  mycap;
+
+        </script>
+
+
+            <h4>Convert string to JSON array</h4>
+            <p id="i3"></p>
+            <p id="i4"></p>
+        <script>
+            const states = '["Delhi", "Gujarat", "UP", "Rajasthan", "Maharashtra", "Karnataka"]';
+            document.getElementById('i3').innerHTML =  states;
+
+            const mystate = JSON.parse(states);
+            document.getElementById('i4').innerHTML =  mystate;
+
+
+            
+        </script>
+    </body>
+</html>

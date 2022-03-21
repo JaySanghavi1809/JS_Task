@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Define numeric array and search given value from it</title>
+    </head>
+
+    <body>
+        <h3>Define numeric array and search given value from it</h3>
+
+        <p id="i1"></p>
+        <p id="i2"></p>
+
+        <script>
+            const num = [10,25,20,15,30,40,35,50,45];
+            document.getElementById('i1').innerHTML = num;
+
+            let position = num.indexOf(50);
+            document.getElementById('i2').innerHTML = '50 is Found on index number: ' + position;
+        </script>
+    </body>
+</html>

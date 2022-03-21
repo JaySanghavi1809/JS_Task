@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Declared numeric array and sort in ascending order and descending order</title>
+    </head>
+
+    <body>
+        
+        <h3>Declared numeric array and sort in ascending order and descending order</h3>
+        <p id="i1"></p>
+        
+        <button onclick="sortAscending()">Sort in Ascending Order</button>
+        <p id="i2"></p>
+
+        <button onclick="sortDscending()">Sort in Descending Order</button>
+        <p id="i3"></p>
+        
+
+        <script>
+             const num = [10,25,20,15,30,40,35,50,100];
+             document.getElementById('i1').innerHTML = num ;
+            
+
+             function sortAscending()
+             {
+                num.sort( function(a, b) {return a - b} );
+                document.getElementById('i2').innerHTML = num;
+             }
+
+             function sortDscending()
+             {
+                 num.sort( function(a,b) {return b - a} );
+                 document.getElementById('i3').innerHTML = num;
+             }
+              
+
+        </script>
+    </body>
+</html>

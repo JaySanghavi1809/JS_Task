@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Search specific word and it's position from string</title>
+    </head>
+
+    <body>
+        <h3>Search specific word and it's position from string</h3>
+        <p id="i1"></p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <script>
+           
+            let str = 'There are 28 states in India'; 
+            document.getElementById('i1').innerHTML = 'String is: ' + str;
+
+            document.getElementById('demo').innerHTML = 'The Position of "I" is: ' + str.search('I');
+
+            document.getElementById('demo1').innerHTML = 'The Character at 13th Position is: ' + str.charAt(13);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Count Character and word of given string</title>
+    </head>
+
+    <body>
+        <h3>Count Character and word of given string</h3>
+        <p id="i1"></p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+
+        <script>
+            let str = prompt("Enter String");
+            document.getElementById('i1').innerHTML = 'String is: ' + str;
+
+            document.getElementById('demo').innerHTML = 'Length is: ' + str.length;
+
+            document.getElementById('demo1').innerHTML = 'Number of Words: ' + str.match(/(\w+)/g).length;
+
+            document.getElementById('demo2').innerHTML = 'Number of Character: ' + str.match(/(\w)/g).length;
+                
+            
+
+        </script>
+    </body>
+</html>
